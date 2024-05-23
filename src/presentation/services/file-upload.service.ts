@@ -17,7 +17,7 @@ export class FileUploadService {
   async uploadSingle(
     file: UploadedFile,
     folder: string = "uploads",
-    validExtensions: string[] = ["png", "gif", "jpg", "jpeg"]
+    validExtensions: string[] = ["jpg", "jpeg"]
   ) {
     try {
       const fileExtension = file.mimetype.split("/").at(1) ?? "";
